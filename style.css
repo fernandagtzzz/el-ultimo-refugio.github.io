@@ -73,13 +73,14 @@ input[type="radio"] {
 }
 
 /* Result Styles */
+/* 
 .result {
-    text-align: center;
+    /* text-align: center;
     padding: 30px;
     background-color: #2a2a2a;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+}*/
 
 #result-death {
     background-color: #6a040f;
@@ -104,7 +105,6 @@ input[type="radio"] {
     height: auto;
     max-height: 500px; /* Ajusta según el tamaño de tu imagen */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
-    border-radius: 10px; /* Bordes redondeados opcionales */
     display: block; /* Elimina el espacio debajo de la imagen */
     margin: 0 auto; /* Centra la imagen */
 }
