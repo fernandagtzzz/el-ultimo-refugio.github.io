@@ -1,3 +1,5 @@
+/* style.css */
+
 /* General Styles */
 body {
     background-color: #f8f9fa;
@@ -6,7 +8,12 @@ body {
 }
 
 .container {
-    margin-top: 30px;
+    margin-top: 20px;
+    max-width: 800px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 /* Header */
@@ -20,9 +27,21 @@ h1 {
 .section-content {
     margin-bottom: 20px;
     padding: 20px;
-    border-radius: 8px;
-    background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #f1f3f5;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.section-content h2 {
+    color: #343a40;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.section-content p {
+    font-size: 16px;
+    color: #495057;
 }
 
 .hidden {
@@ -31,7 +50,7 @@ h1 {
 
 /* Radio Buttons */
 .form-check.custom-radio {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .form-check-input:checked + .form-check-label {
@@ -39,23 +58,21 @@ h1 {
     font-weight: bold;
 }
 
-.form-check-input {
-    border-radius: 50%;
-    border: 2px solid #007bff;
-    height: 1.5rem;
-    width: 1.5rem;
-}
-
 .form-check-label {
-    margin-left: 1.5rem;
+    font-size: 16px;
 }
 
 /* Buttons */
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 10px;
+}
+
 .btn-primary {
     background-color: #007bff;
     border-color: #007bff;
     font-size: 16px;
-    padding: 10px 20px;
 }
 
 .btn-primary:hover {
@@ -63,23 +80,35 @@ h1 {
     border-color: #004085;
 }
 
-.btn {
-    font-size: 16px;
-    padding: 10px 20px;
+.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #bd2130;
+    border-color: #a71d2a;
+}
+
+.btn-confirm:disabled {
+    background-color: #e9ecef;
+    border-color: #ced4da;
+    color: #6c757d;
 }
 
 /* Result Styles */
 .result {
     text-align: center;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: #ffffff;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 20px;
 }
 
 .result h2 {
     color: #dc3545;
+    font-size: 24px;
 }
 
 .result p {
@@ -87,42 +116,26 @@ h1 {
     color: #495057;
 }
 
+.result-survival h2 {
+    color: #28a745;
+}
+
+.result-survival p {
+    font-size: 20px;
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
     .container {
-        margin-top: 20px;
+        margin-top: 10px;
+        padding: 15px;
     }
 
     .btn {
         width: 100%;
-        padding: 12px 0;
     }
 
-    .form-check-label {
-        margin-left: 1.2rem;
-    }
-
-    .form-check-input {
-        height: 1.3rem;
-        width: 1.3rem;
-    }
-}
-
-@media (max-width: 480px) {
     .section-content {
         padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 10px;
-    }
-
-    .result p {
-        font-size: 16px;
     }
 }
