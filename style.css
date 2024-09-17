@@ -100,7 +100,7 @@ input[type="radio"] {
     font-size: 1.2rem;
 }
 .result-img {
-    width: 30%;
+    width: 100%;
     height: auto;
     max-height: 500px; /* Ajusta según el tamaño de tu imagen */
     object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
