@@ -75,7 +75,7 @@ input[type="radio"] {
 /* Result Styles */
 /* 
 .result {
-    /* text-align: center;
+    text-align: center;
     padding: 30px;
     background-color: #2a2a2a;
     border-radius: 10px;
@@ -88,6 +88,11 @@ input[type="radio"] {
 }
 
 #result-survival {
+    text-align: center;
+    padding: 30px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: #2a9d8f;
     color: white;
 }
